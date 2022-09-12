@@ -1,0 +1,10 @@
+Feature: UF07 - Como usuario-farmacia deseo poder recibir notificaciones a través del celular cuando queden pocas unidades de un producto, 
+para así en caso de querer poder comprar más unidades
+
+    Scenario: E01 - Usuario-farnacia desea mantener sus stocks estables para no perder ventas
+    Given el Usuario-farmacia ingresa a su cuenta en el sistema
+        And ingresa a sus Productos
+    When Encuentra que su producto mas vendido esta a pocas unidades de estar agotado
+        And prorgrama una notificacion de alerta de fuera de stock con un numero de unidades delimitado
+    Then el sistema envia mensajes por la cuenta logeada en el sistema y por correo
+        And el usuario-farmacia adquiere mas productos agotados de su proveedor
