@@ -1,0 +1,8 @@
+Feature: UP02 - Como usuario-persona, quiero saber los precios más baratos del total de una compra 
+que requiero en las farmacias más cercanas, para no estar comparando reiteradamente los precios en cada farmacia.
+
+    Scenario: E01 - Usuario-persona desea realizar una compra
+    Given el Usuario persona se registro en el sistema
+    When Encuentra el producto disponible en la app"
+    Then el sistema encuentra una farmacia con el medicamento
+        And la localidad de la farmacia
